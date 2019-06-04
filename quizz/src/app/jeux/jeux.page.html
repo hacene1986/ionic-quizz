@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>jeux</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+          
+              <h2>Score: <span>{{score}}</span></h2>
+              
+             
+      </ion-col>
+      <ion-col>
+        <ion-row>
+          <ion-col>
+              <img  src="https://img.lovepik.com/photo/40003/3178.jpg_wh860.jpg"/>
+          </ion-col>
+          <ion-col>
+            <img src="https://img.lovepik.com/photo/40003/3178.jpg_wh860.jpg"/>
+          </ion-col>
+          <ion-col>
+              <img src="https://img.lovepik.com/photo/40003/3178.jpg_wh860.jpg"/>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+<ion-card class="question">
+  <ion-card-header>
+    <ion-card-subtitle>Question</ion-card-subtitle>
+    <ion-card-title>Catégorie: {{question.categorie}}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    {{question.text}}
+  </ion-card-content>
+</ion-card>
+<ion-grid>
+  <ion-row>
+    <ion-col>
+        <ion-button color="success">Vrai</ion-button>
+    </ion-col>
+    <ion-col>
+        <ion-avatar><img src="http://www.regles.com/images/jeux/xl/8americain.jpg"/></ion-avatar>
+    </ion-col>
+    <ion-col>
+        <ion-avatar><img src="http://www.regles.com/images/jeux/xl/8americain.jpg"/></ion-avatar>
+    </ion-col>
+    <ion-col>
+        <ion-button color="danger">Faux</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+</ion-content>
