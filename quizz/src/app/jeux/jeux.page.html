@@ -8,10 +8,7 @@
   <ion-grid>
     <ion-row>
       <ion-col>
-          
-              <h2>Score: <span>{{score}}</span></h2>
-              
-             
+           <h2>Score: <span>{{score}}</span></h2>       
       </ion-col>
       <ion-col>
         <ion-row>
@@ -36,12 +33,15 @@
 
   <ion-card-content>
     {{question.text}}
+    <div class="success">
+      {{message}}
+    </div> 
   </ion-card-content>
 </ion-card>
 <ion-grid>
   <ion-row>
     <ion-col>
-        <ion-button color="success">Vrai</ion-button>
+        <ion-button color="success" (click)="isTrue()">Vrai</ion-button>
     </ion-col>
     <ion-col>
         <ion-avatar><img src="http://www.regles.com/images/jeux/xl/8americain.jpg"/></ion-avatar>
@@ -54,5 +54,8 @@
     </ion-col>
   </ion-row>
 </ion-grid>
+<div class="suivant">
+  <ion-button style="width: 100%" color="warning" (click)="refrech()">Suivant</ion-button>
+</div>
 
 </ion-content>
