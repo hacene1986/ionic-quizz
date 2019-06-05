@@ -13,14 +13,14 @@
       <ion-col>
         <ion-row>
           <ion-col>
-              <img  src="https://img.lovepik.com/photo/40003/3178.jpg_wh860.jpg"/>
+              <img  src={{img}}/>
           </ion-col>
           <ion-col>
-            <img src="https://img.lovepik.com/photo/40003/3178.jpg_wh860.jpg"/>
-          </ion-col>
-          <ion-col>
-              <img src="https://img.lovepik.com/photo/40003/3178.jpg_wh860.jpg"/>
-          </ion-col>
+            <img  src={{img}}/>
+        </ion-col>
+        <ion-col>
+             <img  src={{img}}/>
+        </ion-col>
         </ion-row>
       </ion-col>
     </ion-row>
@@ -34,10 +34,13 @@
   <ion-card-content>
     {{question.text}}
     <div class="success">
-      {{message}}
+      {{reponse}}
     </div> 
   </ion-card-content>
 </ion-card>
+<div class="success">
+  {{message}}
+</div>
 <ion-grid>
   <ion-row>
     <ion-col>

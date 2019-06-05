@@ -6,6 +6,7 @@ import {Question} from '../model/question';
 export class QuestionsService {
 
   questions: Question[];
+  
   constructor() {
 
     this.questions = [
@@ -13,6 +14,8 @@ export class QuestionsService {
       new Question('Le JavaScript est un langage de programmation ?', true, 'Oui le JavaScript nous permet de faire de la programmation', 'difficile', 'Informatique'),
       new Question('Le 14 juillet est une fète nationale ?', true, 'oui c\'est vrais', 'facile', 'histoire')
     ];
+
+ 
    }
 
    getQuestion(){
@@ -21,5 +24,6 @@ export class QuestionsService {
    return rand
    }
 
+ 
    
 }
